@@ -1,13 +1,25 @@
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 public class Meetings {
     //Plenty more to add but just to get a start
+    LocalDateTime timeOfMeeting;
+    boolean prof, priv, pub;
 
-    public void createMeetings(LocalDateTime dateStartOfRange, LocalDateTime dateEndOfRange){
-        //Include type of meeting, Professional, private, public meeting etc
+    public Meetings(LocalDateTime meetingStart, ArrayList<Person> personList, boolean prof, boolean priv){
+    this.prof = prof;
+
+    this.priv = priv;
+
     }
 
-    public void inviteToMeeting(Person person){
+    public void createMeetings(Person person, LocalDateTime dateStartOfRange, LocalDateTime dateEndOfRange){
+        //Include type of meeting, Professional, private, public meeting etc
+        boolean pro, priv, pub;
+    }
+
+    public void inviteToMeeting(ArrayList<Person> person){
+
     }
 
     public void returnRequirements(){ //What devices are needed etc
@@ -23,7 +35,8 @@ public class Meetings {
     public void meetingTimePreferences(Person person){
     }
 
-    public void getPreferences(Person person){
+
+    public void getPreferences(Person person, boolean inOffice){
         //Important people may be asked to state preference of location
         //For ease we'll just do two locations, office 'A' or something like that
         //and online and use 'Zoom' or whatever
