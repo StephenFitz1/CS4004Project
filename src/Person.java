@@ -6,12 +6,13 @@ public class Person {
     String title;
     boolean meetingInOffice;
     private ArrayList<Person> persons = new ArrayList<Person>();
+    private int importance;
 
     Person(){
 
     }
 
-    Person(String name, String title, boolean meetingInOffice){
+    Person(String name, String title, boolean meetingInOffice, int importance){
         this.name = name;
         this.title = title;
         this.meetingInOffice = meetingInOffice;
