@@ -4,11 +4,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MeetingsTest {
 
-    Person liam = new Person("Liam","waster", false);
-    Person steve = new Person("Stephen", "Pro Tester", true);
-    Person simCard = new Person("Szymon", "Pro Choocher", false);
-    Person martimus = new Person("Martimus", "Mullin-g", true);
-    Person boris = new Person("Boris", "Cute Russian a.k.a Блять", false);
+    Person liam = new Person("Liam","waster", false, 1);
+    Person steve = new Person("Stephen", "Pro Tester", true, 1);
+    Person simCard = new Person("Szymon", "Pro Choocher", false, 1);
+    Person martimus = new Person("Martimus", "Mullin-g", true, 1);
+    Person boris = new Person("Boris", "Cute Russian a.k.a Блять", false,1);
 
     @Test
     void createMeetings() {

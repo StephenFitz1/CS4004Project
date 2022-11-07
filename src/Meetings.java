@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class Meetings {
     //Plenty more to add but just to get a start
     LocalDateTime timeOfMeeting;
+    private ArrayList<Meetings> meetings = new ArrayList<>();
     boolean prof, priv, pub;
 
     public Meetings(LocalDateTime meetingStart, ArrayList<Person> personList, boolean prof, boolean priv){
@@ -11,6 +12,14 @@ public class Meetings {
 
     this.priv = priv;
 
+    }
+
+    public void add(Meetings meeting){
+        meetings.add(meeting);
+    }
+
+    public void cancel(Meetings meeting){
+        meetings.remove(meeting);
     }
 
     public void createMeetings(Person person, LocalDateTime dateStartOfRange, LocalDateTime dateEndOfRange){

@@ -23,7 +23,7 @@ public class Person {
             System.out.println("Meeting shall be in the office");
             return true;
         } else {
-            System.out.println("Lazy cunt, home it is");
+            System.out.println("Meeting shall be virtual");
         }
         return false;
     }
@@ -59,9 +59,4 @@ public class Person {
         this.title = title;
     }
 
-//    public static void main(String[] args) {
-//        Person p1 = new Person("Junky Joe Joyce", "Top shagger", true);
-//        System.out.println(p1.getName());
-//        System.out.print(p1.getTitle());
-//    }
 }
